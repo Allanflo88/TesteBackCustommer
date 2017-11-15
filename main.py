@@ -5,13 +5,12 @@ import CustomerService
 import Customer
 
 
-#Host = raw_input("Host: ")
-#usuario = raw_input("User: ")
-#senha = raw_input("Password: ")
-#database = raw_input("Database: ")
-#service = CustomerService.CustomerService(Host,usuario, senha, database)
+Host = raw_input("Host: ")
+usuario = raw_input("User: ")
+senha = raw_input("Password: ")
+database = raw_input("Database: ")
+service = CustomerService.CustomerService(Host,usuario, senha, database)
 
-service = CustomerService.CustomerService("localhost","root", "Andreia16", "Testes")
 customers = []
 
 x = input("Digite o total de clientes a serem cadastrados: ")
