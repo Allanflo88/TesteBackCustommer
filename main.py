@@ -28,6 +28,12 @@ for i in range(x):
 customers = service.selecao()
 service.encerra()
 
+media = 0.0
+for i in range(len(customers)):
+    media += float(customers[i].getValor())
+
+print("Media: %.2f\n"% (media / len(customers)))
+
 for i in range(len(customers)):
     print("ID: " + str(customers[i].getId()))
     print("CPF_CNPJ: " + str(customers[i].getCpf_cnpj()))
